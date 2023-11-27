@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>graph</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ["weeks", "Hours", { role: "style" }],
+                ["Mon", 6, "#2E2D4D"],
+                ["Tue", 2, "2E2D4D"],
+                ["Wed", 6, "2E2D4D"],
+                ["Thu", 11, "color: #E4E3D3"],
+                ["Fri", 5, "color: #2E2D4D"],
+                ["Sat", 4, "color: #2E2D4D"],
+                ["Sun", 7.45, "color: #2E2D4D"]
+            ]);
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1,
+                {
+                    calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation"
+                },
+                2]);
+
+            var options = {
+
+                width: 460,
+                height: 270,
+                bar: { groupWidth: "25%" },
+                legend: { position: "none" },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+            chart.draw(view, options);
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="histogram_chart">
+            <div class="his1">
+                <h3>Your Activity</h3>
+                <ul class="his">
+                    <li><a href="#"><i class="fa-solid fa-chart-line"></i> 14%</a></li>
+                </ul>
+                <form action="/action_page.php">
+                    <select name="Weekly" id="selectTag">
+                        <option value="24 Hours">24 Hours</option>
+                        <option value="Weekly">Weekly</option>
+                        <option value="Monthly">Monthly</option>
+                        <option value="Yearly">Yearly</option>
+                        
+                    </select>
+                </form>
+            </div>
+            <div class="hpara">
+                <p>Progress increased this week</p>
+            </div>
+            <div class="hisgraph">
+                <div id="columnchart_values" style="width: 100px; height: 300px;"></div>
+            </div>
+            
+        </div>
+        <div class="proplan">
+            <div class="top">
+                <h2>Pro Plan: Scientist</h2>
+
+                <button>View All</button>
+            </div>
+            <div class="mid">
+                <ul id="unorder">
+                    <li><a href="#"><i class="ri-checkbox-circle-fill"><span>&nbsp;&nbsp;Premium content: reserch papers,case studies</span></i></a></li>
+                    <li><a href="#"><i class="ri-checkbox-circle-fill"><span>&nbsp;&nbsp;Advanced Level content</span></i></a></li>
+                    <li><a href="#"><i class="ri-checkbox-circle-fill"><span>&nbsp;&nbsp;Access to expert Q&A sessions</span></i></a></li>
+                </ul>
+
+                <button class="plan">Upgrade plan</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+}
+.container{
+    height: 110vh;
+    width: 100%;
+    border: 1px solid red;
+    background: #E4E3D3;
+}
+.histogram_chart{
+    /* border: 2px solid blue; */
+    display: inline-block;
+    width: 500px;
+    height: 360px;
+    background: white;
+    margin: 20px 50px;
+
+}
+.his1{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+}
+.his1 h3{
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #2E2D4D;
+    
+    
+}
+.his{
+    list-style: none;
+    border: 3px solid #596869;
+    width: 80px;
+    height: 30px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.his li a{ 
+    text-decoration: none;
+    color: #596869;
+}
+select{
+    border: 1px solid #596869;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    color: #596869;
+    background: white;
+    
+}
+.hpara{
+    /* border: 1px solid red; */
+    display: inline-block;
+    margin-left: 45px;
+    color: #596869;
+    font-size: 15px;
+}
+.proplan{
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 50vh;
+    margin: 10px 50px;
+    background-image: url(simon-lee-z1vpjHAq1o8-unsplash.jpg);
+    background-size: cover;
+    
+   
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+}
+.top h2{
+    color: black;
+    font-size: 28px;
+    margin: 20px;
+}
+.top button{
+    width: 100px;
+    margin: 20px;
+    border: none;
+    background: #D3BF98;
+}
+.mid{
+    
+    margin: 10px 10px;
+}
+#unorder{
+    list-style: none;
+    
+}
+#unorder li {
+    
+    margin: 20px;
+}
+#unorder li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+span{
+    font-size: 16px;
+    font-weight: 100;
+}
+.plan{
+    width: 150px;
+    height: 40px;
+    margin-left: 20px;
+    border: none;
+    color: aliceblue;
+    background: black;
+    font-size: 16px;
+    margin-top: 50px;
+}
