@@ -68,44 +68,92 @@
 
 <body>
     <div class="container">
-        <div class="histogram_chart">
-            <div class="his1">
-                <h3>Your Activity</h3>
-                <ul class="his">
-                    <li><a href="#"><i class="fa-solid fa-chart-line"></i> 14%</a></li>
-                </ul>
-                <form action="/action_page.php">
-                    <select name="Weekly" id="selectTag">
-                        <option value="24 Hours">24 Hours</option>
-                        <option value="Weekly">Weekly</option>
-                        <option value="Monthly">Monthly</option>
-                        <option value="Yearly">Yearly</option>
-                        
-                    </select>
-                </form>
+        <div class="left">
+            <div class="histogram_chart">
+                <div class="his1">
+                    <h3>Your Activity</h3>
+                    <ul class="his">
+                        <li><a href="#"><i class="fa-solid fa-chart-line"></i> 14%</a></li>
+                    </ul>
+                    <form action="/action_page.php">
+                        <select name="Weekly" id="selectTag">
+                            <option value="24 Hours">24 Hours</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Yearly">Yearly</option>
+                            
+                        </select>
+                    </form>
+                </div>
+                <div class="hpara">
+                    <p>Progress increased this week</p>
+                </div>
+                <div class="hisgraph">
+                    <div id="columnchart_values" style="width: 100px; height: 300px;"></div>
+                </div>
+                
             </div>
-            <div class="hpara">
-                <p>Progress increased this week</p>
+
+            <div class="proplan">
+                <div class="top">
+                    <h2>Pro Plan: Scientist</h2>
+    
+                    <button>View All</button>
+                </div>
+                <div class="mid">
+                    <ul id="unorder">
+                        <li><a href="#"><i class="ri-checkbox-circle-fill"><span>&nbsp;&nbsp;Premium content: reserch papers,case studies</span></i></a></li>
+                        <li><a href="#"><i class="ri-checkbox-circle-fill"><span>&nbsp;&nbsp;Advanced Level content</span></i></a></li>
+                        <li><a href="#"><i class="ri-checkbox-circle-fill"><span>&nbsp;&nbsp;Access to expert Q&A sessions</span></i></a></li>
+                    </ul>
+    
+                    <button class="plan">Upgrade plan</button>
+                </div>
             </div>
-            <div class="hisgraph">
-                <div id="columnchart_values" style="width: 100px; height: 300px;"></div>
-            </div>
-            
+
+
         </div>
-        <div class="proplan">
-            <div class="top">
-                <h2>Pro Plan: Scientist</h2>
+        <div class="right">
 
-                <button>View All</button>
-            </div>
-            <div class="mid">
-                <ul id="unorder">
-                    <li><a href="#"><i class="ri-checkbox-circle-fill"><span>&nbsp;&nbsp;Premium content: reserch papers,case studies</span></i></a></li>
-                    <li><a href="#"><i class="ri-checkbox-circle-fill"><span>&nbsp;&nbsp;Advanced Level content</span></i></a></li>
-                    <li><a href="#"><i class="ri-checkbox-circle-fill"><span>&nbsp;&nbsp;Access to expert Q&A sessions</span></i></a></li>
-                </ul>
+            <div class="firstdiv">
+                <div class="eimage">
+                    <img src="rbg-removebg-preview.png" alt="">
+                </div>
+                <div class="textcontent">
+                    <div class="textn">
+                        <h3>Principal of Biochemistry</h3>
+                        <ul class="sec">
+                            <li><a href="#"><i class="ri-timer-line"></i>&nbsp;74h</a></li>
+                        </ul>
+                    </div>
+                    <div class="rp">
+                        <p>Biochemistry is the study of molecules process</p>
+                    </div>
+                    <div class="imger">
+                        <div class="one">
+                            <img src="one.jpg" alt="">
+                            <div class="texti">
+                                <h3>Level</h3>
+                                <h2>Advanced</h2>
+                            </div>
+                        </div>
+                        <div class="one">
+                            <img src="two.jpg" alt="">
+                            <div class="texti">
+                                <h3>Start</h3>
+                                <h2>19.03.23</h2>
+                            </div>
+                        </div>
+                        <div class="one">
+                            <img src="three.jpg" alt="">
+                            <div class="texti">
+                                <h3>Classes</h3>
+                                <h2>34</h2>
+                            </div>
+                        </div>
 
-                <button class="plan">Upgrade plan</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
